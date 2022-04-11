@@ -1,0 +1,85 @@
+Place order
+===============================
+
+.. note::
+
+    | Authentication is required to call the private API.
+    | Use the API key and secret key issued by apisify view.
+    | Only the API key is used when requesting from tradingview.
+    | :doc:`authentication` section for more information.
+
+**POST /v1/order**
+------------------
+
+| The following **HTTP request body** is required to the request.
+
+.. csv-table::
+    :header: Parameter, Required, Type, Description, Value
+    :widths: 5, 5, 3, 5, 15
+
+    strategy, true, string, Strategy Name, test_strategy
+    exchange, true, string, Exchange, "bybit, bybit_testnet, binance, binance_testnet"
+    order_type, true, string, Order Type, "Market or Limit"
+    qty, true, number, Order Quantity, "1, 0.01"
+    side, true, string, Side, "Buy, Sell, Close, Long, Short, Sarbuy, Sarsell, 2, 1, 0, -1, -2"
+    symbol, true, string, Symbol, BTCUSD
+    price, true (order_type=Limit), number, Order Price, 10000
+    apikey, true, string, API key, apikey
+    timestamp, true (except from tradingview), number, Unix Timestamp, 1649027013445
+    sign, true (except from tradingview), string, Signature, signature
+    memo, false, string, Memo, this is memo
+
+.. note::
+
+    | Long, 1 -> Buy
+    | Short, -1 -> Sell
+    | 0 -> Close
+    | Sarbuy -> Stop and reverse buy
+    | Sarsell -> Stop and reverse sell
+
+    | **Stop and reverse (SAR)**
+    | Closing an open position and simultaneously opening a new opposite position
+
+.. code-block:: python
+
+    # python sample
+    import aiohttp
+    import asyncio
+    import time
+    import hmac
+
+    async def main():
+        apikey = '< YOUR APISIFY APIKEY >'
+        timestamp = int(time.time() * 1000)
+        url = '< YOUR SERVER URL >/v1/order'
+        signature_payload = f'{timestamp}POST{url}'.encode()
+        signature = hmac.new('< YOUR APISIFY SECRETKEY >'.encode(), signature_payload, 'sha256').hexdigest()
+
+        data = {
+            "strategy": "test_strategy",
+            "exchange": "bybit_testnet",
+            "order_type": "Market",
+            "qty": 1,
+            "side": "Buy",
+            "symbol": "BTCUSD",
+            "price": 10000,
+            "memo": "memo",
+            "apikey": apikey,
+            "timestamp": timestamp,
+            "sign": signature
+        }
+
+    async def get_result(session, url):
+        async with session.post(url,json=data) as resp:
+            result = await resp.json()
+            return result
+
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+        tasks.append(get_result(session, url))
+
+        results = await asyncio.gather(*tasks,return_exceptions=True)
+        for resp in results:
+            print(resp)
+
+    asyncio.run(main())

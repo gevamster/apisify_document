@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Cloud Platformの設定 &mdash; sphinx_document v0.1.0 ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="apisifyアカウント作成" href="apisify.html" />
+    <link rel="prev" title="Oktetoアカウント作成" href="okteto.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sphinx_document
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">設定:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="github.html">GitHubアカウント作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="okteto.html">Oktetoアカウント作成</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Google Cloud Platformの設定</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-google-account">1. 新規プロジェクトを作成してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#access-google-cloud-platform-and-click">2. Google Cloud Platformを開き、左上の▼をクリックしてください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-new-project">3. 新規プロジェクトを作成してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-bigquery-api">4. &quot;BigQuery API&quot;を検索してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#activate-bigquery-api">5. &quot;BigQuery API&quot;を有効化してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-service-account">6. サービスアカウントを作成してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-key-json-for-the-service-account-you-created">7. 作成したサービスアカウントのキー(json)を作成してください.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apisify.html">apisifyアカウント作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apisify-licensekey.html">apisifyライセンスキーの作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clone-repository.html">レポジトリのクローン</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">連携</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/authentication.html">認証</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/order.html">新規注文</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sphinx_document</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Google Cloud Platformの設定</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/settings/google-cloud-platform.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="settings-of-google-cloud-platform">
+<h1>Google Cloud Platformの設定<a class="headerlink" href="#settings-of-google-cloud-platform" title="このヘッドラインへのパーマリンク"></a></h1>
+<section id="create-a-google-account">
+<h2>1. 新規プロジェクトを作成してください.<a class="headerlink" href="#create-a-google-account" title="このヘッドラインへのパーマリンク"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>Since apisify uses Google Cloud Platform, it is recommended that you create a new account.</p>
+</div>
+</section>
+<section id="access-google-cloud-platform-and-click">
+<h2>2. Google Cloud Platformを開き、左上の▼をクリックしてください.<a class="headerlink" href="#access-google-cloud-platform-and-click" title="このヘッドラインへのパーマリンク"></a></h2>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://console.cloud.google.com/">https://console.cloud.google.com/</a></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/gcp_triangle.png"><img alt="gcp_triangle" src="../../_images/gcp_triangle.png" style="width: 400px;" /></a>
+</section>
+<section id="create-new-project">
+<h2>3. 新規プロジェクトを作成してください.<a class="headerlink" href="#create-new-project" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="../../_images/gcp_newproject.png"><img alt="okteto_login" src="../../_images/gcp_newproject.png" style="width: 400px;" /></a>
+</section>
+<section id="search-bigquery-api">
+<h2>4. &quot;BigQuery API&quot;を検索してください.<a class="headerlink" href="#search-bigquery-api" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="../../_images/gcp_search.png"><img alt="gcp_search" src="../../_images/gcp_search.png" style="width: 400px;" /></a>
+</section>
+<section id="activate-bigquery-api">
+<h2>5. &quot;BigQuery API&quot;を有効化してください.<a class="headerlink" href="#activate-bigquery-api" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="../../_images/gcp_bigqueryapi.png"><img alt="gcp_bigqueryapi" src="../../_images/gcp_bigqueryapi.png" style="width: 400px;" /></a>
+</section>
+<section id="create-service-account">
+<h2>6. サービスアカウントを作成してください.<a class="headerlink" href="#create-service-account" title="このヘッドラインへのパーマリンク"></a></h2>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://console.cloud.google.com/iam-admin/serviceaccounts/create">https://console.cloud.google.com/iam-admin/serviceaccounts/create</a></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>ロールは&quot;BigQuery管理者&quot;を付与してください.</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/gcp_serviceaccount.png"><img alt="gcp_serviceaccount" src="../../_images/gcp_serviceaccount.png" style="width: 400px;" /></a>
+</section>
+<section id="create-a-key-json-for-the-service-account-you-created">
+<h2>7. 作成したサービスアカウントのキー(json)を作成してください.<a class="headerlink" href="#create-a-key-json-for-the-service-account-you-created" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="../../_images/gcp_key.png"><img alt="gcp_key" src="../../_images/gcp_key.png" style="width: 400px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  <div>
+    <select name="lang" onchange="location.href=value;">
+        <option value="../../../en/pages/settings/google-cloud-platform.html"
+        >🇬🇧</option>
+        <option value="../../../ja/pages/settings/google-cloud-platform.html"
+            selected
+        >🇯🇵</option>
+    </select>
+  </div><div class="rst-footer-buttons" role="navigation" aria-label="フッター">
+        <a href="okteto.html" class="btn btn-neutral float-left" title="Oktetoアカウント作成" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 前頁</a>
+        <a href="apisify.html" class="btn btn-neutral float-right" title="apisifyアカウント作成" accesskey="n" rel="next">次頁 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, santona.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

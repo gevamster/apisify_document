@@ -1,0 +1,61 @@
+Integration
+============
+
+1. Login to Okteto and Create a personal access token by 『"Settings" -> "Developer Settings" -> "New Tokens". / Create a token by "Settings" -> "Developer Settings" -> "New Tokens"』.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. image:: images/integration/okteto_token.png
+    :width: 400
+    :alt: okteto_token
+
+2. Login to GitHub, go to "Settings" -> "Secrets" -> "Actions" -> "New repository secret" and register as follows.
+-------------------------------------------------------------------------------------------------------------------
+
+| Name: OKTETO_TOKEN
+| Value: Value written in token file
+
+.. image:: images/integration/register_token.png
+    :width: 400
+    :alt: register_token
+
+3. Login to Okteto and Click "Launch Dev Environment".
+-------------------------------------------------------
+
+4. Click your apisify repository from "Only select repositories" and Deploy.
+-----------------------------------------------------------------------------
+
+5. Click on the URL without "/view" listed in the apisifyview.
+---------------------------------------------------------------
+
+.. image:: images/integration/access_apisifyview.png
+    :width: 400
+    :alt: access_apisifyview
+
+6. Please login. The default settings are as follows.
+------------------------------------------------------
+
+| Username: admin
+| Password: admin
+
+.. image:: images/integration/login_apisifyview.png
+    :width: 400
+    :alt: login_apisifyview
+
+7. Please change your username and password.
+---------------------------------------------
+
+.. image:: images/integration/change_userinformation.png
+    :width: 400
+    :alt: change_userinformation
+
+8. Register the apisify license key created in :doc:`apisify-licensekey`.
+--------------------------------------------------------------------------
+
+9. Register your api key and secret key for the exchange.
+----------------------------------------------------------
+
+.. image:: images/integration/apisifyview_setting.png
+    :width: 400
+    :alt: apisifyview_setting
+
+.. note:: All configuration values, including these keys, are stored in an encrypted database within the user's environment and are not stored externally.

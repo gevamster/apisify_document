@@ -1,0 +1,21 @@
+Welcome to apisify documentation!
+==========================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Settings:
+
+   pages/settings/github
+   pages/settings/okteto
+   pages/settings/google-cloud-platform
+   pages/settings/apisify
+   pages/settings/apisify-licensekey
+   pages/settings/clone-repository
+   pages/settings/integration
+
+.. toctree::
+   :maxdepth: 2
+   :caption: API:
+
+   pages/api/authentication
+   pages/api/order
