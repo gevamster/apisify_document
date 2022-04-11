@@ -1,0 +1,66 @@
+Clone repository
+=================
+
+.. note:: Omit this step if you are using the free plan.
+
+1. Access to github page of apisify and Download files by 『"Code" -> "Download.ZIP"』. And, unzip this file.
+--------------------------------------------------------------------------------------------------------------
+
+| https://github.com/gevamster/apisify
+
+.. image:: images/clone_repository/download_apisify_files.png
+    :width: 400
+    :alt: download_apisify_files
+
+2. Create an empty private repository from 『"Repositories"->"New"』 on your github profile page.
+--------------------------------------------------------------------------------------------------
+
+| Repository name: describe freely
+| Public/Private: Private
+| -> Create repository
+
+.. image:: images/clone_repository/create_private_repository.png
+    :width: 400
+    :alt: create_private_repository
+
+.. image:: images/clone_repository/github_check_private.png
+    :width: 400
+    :alt: github_check_private
+
+.. note:: Be sure to check that the private batch is attached. If not, change the batch to private by clicking 『"Setting"->"Change visibility"』 in the repository you created.
+
+
+3. From the repository you have created, go to 『"Add file"->"Upload files"』 and upload the files in the folder you have just unzipped by drag and drop.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. image:: images/clone_repository/drag_and_drop_files.png
+    :width: 400
+    :alt: drag_and_drop_files
+
+4. Access the repository you created and create main.yaml by selecting "Actions"->"set up workflow yourself"->"Start commit".
+------------------------------------------------------------------------------------------------------------------------------
+
+.. image:: images/clone_repository/set_up_a_workflow_yourself.png
+    :width: 400
+    :alt: set_up_a_workflow_yourself
+
+.. image:: images/clone_repository/create_mainyaml.png
+    :width: 400
+    :alt: create_mainyaml
+
+5. Make sure you have main.yaml in .github/workflow, and then go to 『"Add file"->"Upload files"』 and upload "workflow_auth.yaml" and "workflow_deploy.yaml" in .github/workflows in the folder you have just unzipped.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. image:: images/clone_repository/upload_yaml_files.png
+    :width: 400
+    :alt: upload_yaml_files
+
+.. image:: images/clone_repository/upload_yaml_files2.png
+    :width: 400
+    :alt: upload_yaml_files2
+
+6. Check the "Add a README file" checkbox.
+-------------------------------------------------
+
+7. Click "Commit changes" after uploading files.
+-------------------------------------------------

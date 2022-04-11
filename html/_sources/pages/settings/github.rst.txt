@@ -1,0 +1,55 @@
+Create a GitHub account
+========================
+
+.. note:: Since apisify uses GitHub Actions, it is recommended that you create a new account.
+
+1. Access GitHub and click "Sign up".
+--------------------------------------
+
+| https://github.com/
+
+.. image:: images/github/1github_home.png
+    :width: 400
+    :alt: 1github_home
+
+2. Enter the required information.
+-----------------------------------
+
+.. image:: images/github/2github_form.png
+    :width: 400
+    :alt: 2github_form
+
+3. Enter the code that will be sent to the email address you set.
+-------------------------------------------------------------------
+
+.. image:: images/github/3github_form_code.png
+    :width: 400
+    :alt: 3github_form_code
+
+4. Set the number of members to "Just me".
+-------------------------------------------
+
+.. image:: images/github/4github_welcome.png
+    :width: 400
+    :alt: 4github_welcome
+
+5. Feel free to select items of interest.
+------------------------------------------
+
+.. image:: images/github/5github_interested.png
+    :width: 400
+    :alt: 5github_interested
+
+6. Select Free plan.
+---------------------
+
+.. image:: images/github/6github_plan.png
+    :width: 400
+    :alt: 6github_plan
+
+7. You have now created a GitHub account.
+------------------------------------------
+
+.. image:: images/github/7github_account.png
+    :width: 400
+    :alt: 7github_account
