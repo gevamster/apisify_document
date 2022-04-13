@@ -1,4 +1,4 @@
-Settings of Google Cloud Platform
+🥯｜③Settings of Google Cloud Platform
 ==================================
 
 1. Create a Google account

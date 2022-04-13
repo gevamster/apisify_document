@@ -1,4 +1,4 @@
-Integration
+🔌｜⑦Integration
 ============
 
 1. Login to Okteto and Create a personal access token by 『"Settings" -> "Developer Settings" -> "New Tokens". / Create a token by "Settings" -> "Developer Settings" -> "New Tokens"』.

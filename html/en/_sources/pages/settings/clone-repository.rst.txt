@@ -1,4 +1,4 @@
-Clone repository
+✂｜⑥Clone repository
 =================
 
 .. note:: Omit this step if you are using the free plan.

@@ -1,6 +1,39 @@
 Welcome to apisify documentation!
 ==========================================
 
+| :doc:`pages/settings/github`
+| How to create a GitHub account.
+| It is recommended to create a new account in order to use GitHub Actions.
+| Time required: 3~6min
+
+| :doc:`pages/settings/okteto`
+| How to create an Okteto account and obtain a token.
+| Time required: 1~3min
+
+| :doc:`pages/settings/google-cloud-platform`
+| How to create a Google Cloud Platform account and activate BigQuery.
+| Time required: 5~10min
+
+| :doc:`pages/settings/apisify`
+| How to create an apisify account.
+| Time required: 1~3min
+
+| :doc:`pages/settings/apisify-licensekey`
+| How to obtain a license key for apisify.
+| Time required: 1min
+
+| :doc:`pages/settings/clone-repository`
+| How to clone apisify repository.
+| Time required: 5~10min
+
+| :doc:`pages/settings/integration`
+| How to get apisify up and running.
+| Time required: 3~6min
+
+| :doc:`pages/api/order`
+| How to order by apisify.
+| Time required: 1min
+
 .. toctree::
    :maxdepth: 2
    :caption: Settings:

@@ -1,4 +1,4 @@
-Create a Okteto account
+👌｜②Create a Okteto account
 ===============================
 
 1. Access Okteto and click "Try Free".
