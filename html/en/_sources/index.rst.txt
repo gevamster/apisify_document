@@ -1,5 +1,6 @@
 Welcome to apisify documentation!
 ==========================================
+| **Time required for apisify: 20-40min**
 
 | :doc:`pages/settings/github`
 | How to create a GitHub account.

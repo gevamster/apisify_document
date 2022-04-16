@@ -54,8 +54,4 @@
 9. Register your api key and secret key for the exchange.
 ----------------------------------------------------------
 
-.. image:: images/integration/apisifyview_setting.png
-    :width: 400
-    :alt: apisifyview_setting
-
 .. note:: All configuration values, including these keys, are stored in an encrypted database within the user's environment and are not stored externally.
