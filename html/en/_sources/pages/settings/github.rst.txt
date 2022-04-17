@@ -1,5 +1,5 @@
 😺｜①Create a GitHub account
-========================
+===============================
 
 .. note:: Since apisify uses GitHub Actions, it is recommended that you create a new account.
 

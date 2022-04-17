@@ -1,6 +1,6 @@
 Welcome to apisify documentation!
 ==========================================
-| **Time required for apisify: 20-40min**
+| **Time required for apisify: 23-46min**
 
 | :doc:`pages/settings/github`
 | How to create a GitHub account.
@@ -35,6 +35,10 @@ Welcome to apisify documentation!
 | How to order by apisify.
 | Time required: 1min
 
+| :doc:`pages/sample/apisify-flow`
+| How to recurring order by apisify flow.
+| Time required: 3~6min
+
 .. toctree::
    :maxdepth: 2
    :caption: Settings:
@@ -53,3 +57,10 @@ Welcome to apisify documentation!
 
    pages/api/authentication
    pages/api/order
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Sample:
+
+   pages/sample/apisify-flow
+

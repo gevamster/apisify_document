@@ -1,0 +1,71 @@
+🚀｜⑨Recurring order by apisify flow
+=======================================
+
+1. Login to Okteto and Click on the URL without “/flow” listed in the apisifyflow.
+------------------------------------------------------------------------------------
+
+.. note:: iPaaS framework n8n.io is used for apisify flow. https://n8n.io/
+
+2. Set up owner account.
+-----------------------------------
+
+.. image:: images/apisify_flow/setup_account.png
+    :width: 400
+    :alt: setup_account
+
+3. Click continue button.
+-----------------------------------
+
+.. image:: images/apisify_flow/customize.png
+    :width: 400
+    :alt: customize
+
+4. Click "New blank workflow".
+-----------------------------------
+
+.. image:: images/apisify_flow/workflow_templates.png
+    :width: 400
+    :alt: workflow_templates
+
+5. Click "Import from file" and select "recurring_buy.json".
+-------------------------------------------------------------
+
+.. note:: you can get "recurring_buy.json" in discord community.
+
+.. image:: images/apisify_flow/import_file.png
+    :width: 400
+    :alt: import_file
+
+.. image:: images/apisify_flow/recurring_buy.png
+    :width: 400
+    :alt: recurring_buy
+
+6. Click node Key and input apikey and secretkey.
+-----------------------------------
+
+.. image:: images/apisify_flow/add_key.png
+    :width: 400
+    :alt: add_key
+
+7. Click node URL and input apisify trade URL "<YOUR SERVER URL>/v1/order".
+-------------------------------------------------
+
+.. image:: images/apisify_flow/add_URL.png
+    :width: 400
+    :alt: add_URL
+
+8. Click node discord and input discord URL.
+-----------------------------------
+
+.. image:: images/apisify_flow/add_discord_URL.png
+    :width: 400
+    :alt: add_discord_URL
+
+9. Input the other parameters.
+-----------------------------------
+
+10. Set Cron and turn Active.
+-----------------------------------
+
+11. Click Execute Workflow for test
+------------------------------------

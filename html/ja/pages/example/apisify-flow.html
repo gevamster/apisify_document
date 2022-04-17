@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🚀｜⑨Recurring order by apisify flow &mdash; sphinx_document v0.1.0 ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/apisify_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">設定:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../settings/github.html">😺｜①GitHubアカウント作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/okteto.html">👌｜②Oktetoアカウント作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/google-cloud-platform.html">🥯｜③Google Cloud Platformの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/apisify.html">🐂｜④apisifyアカウント作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/apisify-licensekey.html">🗝｜⑤apisifyライセンスキーの作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/clone-repository.html">✂｜⑥レポジトリのクローン</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/integration.html">🔌｜⑦連携</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/authentication.html">認証</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/order.html">🤖｜⑧新規注文</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sample:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sample/apisify-flow.html">apisify flowによる積立買付</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sphinx_document</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>🚀｜⑨Recurring order by apisify flow</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/example/apisify-flow.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="recurring-order-by-apisify-flow">
+<h1>🚀｜⑨Recurring order by apisify flow<a class="headerlink" href="#recurring-order-by-apisify-flow" title="このヘッドラインへのパーマリンク"></a></h1>
+<section id="login-to-okteto-and-click-on-the-url-without-flow-listed-in-the-apisifyflow">
+<h2>1. Login to Okteto and Click on the URL without “/flow” listed in the apisifyflow.<a class="headerlink" href="#login-to-okteto-and-click-on-the-url-without-flow-listed-in-the-apisifyflow" title="このヘッドラインへのパーマリンク"></a></h2>
+<p>..note :: iPaaS framework n8n.io is used for apisify flow. <a class="reference external" href="https://n8n.io/">https://n8n.io/</a></p>
+</section>
+<section id="set-up-owner-account">
+<h2>2. Set up owner account.<a class="headerlink" href="#set-up-owner-account" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/setup_account.png"><img alt="setup_account" src="pages/example/images/apisify_flow/setup_account.png" style="width: 400px;" /></a>
+</section>
+<section id="click-continue-button">
+<h2>3. Click continue button.<a class="headerlink" href="#click-continue-button" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/customize.png"><img alt="customize" src="pages/example/images/apisify_flow/customize.png" style="width: 400px;" /></a>
+</section>
+<section id="click-new-blank-workflow">
+<h2>4. Click &quot;New blank workflow&quot;.<a class="headerlink" href="#click-new-blank-workflow" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/workflow_templates.png"><img alt="workflow_templates" src="pages/example/images/apisify_flow/workflow_templates.png" style="width: 400px;" /></a>
+</section>
+<section id="click-import-from-file-and-select-recurring-buy-json">
+<h2>5. Click &quot;Import from file&quot; and select &quot;recurring_buy.json&quot;.<a class="headerlink" href="#click-import-from-file-and-select-recurring-buy-json" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/import_file.png"><img alt="import_file" src="pages/example/images/apisify_flow/import_file.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/recurring_buy.png"><img alt="recurring_buy" src="pages/example/images/apisify_flow/recurring_buy.png" style="width: 400px;" /></a>
+</section>
+<section id="click-node-key-and-input-apikey-and-secretkey">
+<h2>6. Click node Key and input apikey and secretkey.<a class="headerlink" href="#click-node-key-and-input-apikey-and-secretkey" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/add_key.png"><img alt="add_key" src="pages/example/images/apisify_flow/add_key.png" style="width: 400px;" /></a>
+</section>
+<section id="click-node-url-and-input-apisify-trade-url-your-server-url-v1-order">
+<h2>7. Click node URL and input apisify trade URL &quot;&lt;YOUR SERVER URL&gt;/v1/order&quot;.<a class="headerlink" href="#click-node-url-and-input-apisify-trade-url-your-server-url-v1-order" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/add_URL.png"><img alt="add_URL" src="pages/example/images/apisify_flow/add_URL.png" style="width: 400px;" /></a>
+</section>
+<section id="click-node-discord-and-input-discord-url">
+<h2>8. Click node discord and input discord URL.<a class="headerlink" href="#click-node-discord-and-input-discord-url" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="pages/example/images/apisify_flow/add_discord_URL.png"><img alt="add_discord_URL" src="pages/example/images/apisify_flow/add_discord_URL.png" style="width: 400px;" /></a>
+</section>
+<section id="input-the-other-parameters">
+<h2>9. Input the other parameters.<a class="headerlink" href="#input-the-other-parameters" title="このヘッドラインへのパーマリンク"></a></h2>
+</section>
+<section id="set-cron-and-turn-active">
+<h2>10. Set Cron and turn Active.<a class="headerlink" href="#set-cron-and-turn-active" title="このヘッドラインへのパーマリンク"></a></h2>
+</section>
+<section id="click-execute-workflow-for-test">
+<h2>11. Click Execute Workflow for test<a class="headerlink" href="#click-execute-workflow-for-test" title="このヘッドラインへのパーマリンク"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  <div>
+    <select name="lang" onchange="location.href=value;">
+        <option value="../../../en/pages/example/apisify-flow.html"
+        >🇬🇧</option>
+        <option value="../../../ja/pages/example/apisify-flow.html"
+            selected
+        >🇯🇵</option>
+    </select>
+  </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, santona.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
