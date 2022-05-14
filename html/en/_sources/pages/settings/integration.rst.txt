@@ -24,7 +24,7 @@
 4. Click your apisify repository from "Only select repositories" and Deploy.
 -----------------------------------------------------------------------------
 
-5. Click on the URL without "/view" listed in the apisifyview.
+5. Click on the URL listed in the apisifyview.
 ---------------------------------------------------------------
 
 .. image:: images/integration/access_apisifyview.png

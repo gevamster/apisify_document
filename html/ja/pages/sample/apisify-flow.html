@@ -56,17 +56,15 @@
 <p class="caption" role="heading"><span class="caption-text">Sample:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">🚀｜⑨apisify flowによる積立買付</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#login-to-okteto-and-click-on-the-url-without-flow-listed-in-the-apisifyflow">1. Oktetoにログインし、apisifyflowに記載のURL(&quot;/flow&quot;がついてない方)をクリックしてください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#set-up-owner-account">2. アカウントを設定してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-continue-button">3. continueボタンをクリックしてください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-new-blank-workflow">4. &quot;New blank workflow&quot;をクリックしてください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-import-from-file-and-select-recurring-buy-json">5. &quot;Import from file&quot;をクリックし、&quot;recurring_buy.json&quot;を選択してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-node-key-and-input-apikey-and-secretkey">6. APIキーとシークレットキーをインプットしてください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-node-url-and-input-apisify-trade-url-your-server-url-v1-order">7. apisify tradeのURL &quot;&lt;YOUR SERVER URL&gt;/v1/order&quot;を入力してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-node-discord-and-input-discord-url">8. ディスコードURLを入力してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#input-the-other-parameters">9. 他パラメータを入力してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#set-cron-and-turn-active">10. クロンを設定し、Activeに変更してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-execute-workflow-for-test">11. テストのため、&quot;Execute Workflow&quot;をクリックしてください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#login-to-okteto-and-click-on-the-url-listed-in-the-apisifyflow">1. Oktetoにログインし、apisifyflowに記載のURLをクリックしてください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-new-blank-workflow">2. &quot;New blank workflow&quot;をクリックしてください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-import-from-file-and-select-recurring-buy-json">3. &quot;Import from file&quot;をクリックし、&quot;recurring_buy.json&quot;を選択してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-node-key-and-input-apikey-and-secretkey">4. APIキーとシークレットキーをインプットしてください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-node-url-and-input-apisify-trade-url-your-server-url-v1-order">5. apisify tradeのURL &quot;&lt;YOUR SERVER URL&gt;/v1/order&quot;を入力してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-node-discord-and-input-discord-url">6. ディスコードURLを入力してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#input-the-other-parameters">7. 他パラメータを入力してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-cron-and-turn-active">8. クロンを設定し、Activeに変更してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-execute-workflow-for-test">9. テストのため、&quot;Execute Workflow&quot;をクリックしてください.</a></li>
 </ul>
 </li>
 </ul>
@@ -97,27 +95,19 @@
              
   <section id="recurring-order-by-apisify-flow">
 <h1>🚀｜⑨apisify flowによる積立買付<a class="headerlink" href="#recurring-order-by-apisify-flow" title="このヘッドラインへのパーマリンク"></a></h1>
-<section id="login-to-okteto-and-click-on-the-url-without-flow-listed-in-the-apisifyflow">
-<h2>1. Oktetoにログインし、apisifyflowに記載のURL(&quot;/flow&quot;がついてない方)をクリックしてください.<a class="headerlink" href="#login-to-okteto-and-click-on-the-url-without-flow-listed-in-the-apisifyflow" title="このヘッドラインへのパーマリンク"></a></h2>
+<section id="login-to-okteto-and-click-on-the-url-listed-in-the-apisifyflow">
+<h2>1. Oktetoにログインし、apisifyflowに記載のURLをクリックしてください.<a class="headerlink" href="#login-to-okteto-and-click-on-the-url-listed-in-the-apisifyflow" title="このヘッドラインへのパーマリンク"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>apisify flowではiPaaSフレームワークであるn8n.ioを使用しています.</p>
 </div>
 </section>
-<section id="set-up-owner-account">
-<h2>2. アカウントを設定してください.<a class="headerlink" href="#set-up-owner-account" title="このヘッドラインへのパーマリンク"></a></h2>
-<a class="reference internal image-reference" href="../../_images/setup_account.png"><img alt="setup_account" src="../../_images/setup_account.png" style="width: 400px;" /></a>
-</section>
-<section id="click-continue-button">
-<h2>3. continueボタンをクリックしてください.<a class="headerlink" href="#click-continue-button" title="このヘッドラインへのパーマリンク"></a></h2>
-<a class="reference internal image-reference" href="../../_images/customize.png"><img alt="customize" src="../../_images/customize.png" style="width: 400px;" /></a>
-</section>
 <section id="click-new-blank-workflow">
-<h2>4. &quot;New blank workflow&quot;をクリックしてください.<a class="headerlink" href="#click-new-blank-workflow" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>2. &quot;New blank workflow&quot;をクリックしてください.<a class="headerlink" href="#click-new-blank-workflow" title="このヘッドラインへのパーマリンク"></a></h2>
 <a class="reference internal image-reference" href="../../_images/workflow_templates.png"><img alt="workflow_templates" src="../../_images/workflow_templates.png" style="width: 400px;" /></a>
 </section>
 <section id="click-import-from-file-and-select-recurring-buy-json">
-<h2>5. &quot;Import from file&quot;をクリックし、&quot;recurring_buy.json&quot;を選択してください.<a class="headerlink" href="#click-import-from-file-and-select-recurring-buy-json" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>3. &quot;Import from file&quot;をクリックし、&quot;recurring_buy.json&quot;を選択してください.<a class="headerlink" href="#click-import-from-file-and-select-recurring-buy-json" title="このヘッドラインへのパーマリンク"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>recurring_buy.jsonはディスコードコミュニティ内でダウンロードできます.</p>
@@ -126,25 +116,25 @@
 <a class="reference internal image-reference" href="../../_images/recurring_buy.png"><img alt="recurring_buy" src="../../_images/recurring_buy.png" style="width: 400px;" /></a>
 </section>
 <section id="click-node-key-and-input-apikey-and-secretkey">
-<h2>6. APIキーとシークレットキーをインプットしてください.<a class="headerlink" href="#click-node-key-and-input-apikey-and-secretkey" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>4. APIキーとシークレットキーをインプットしてください.<a class="headerlink" href="#click-node-key-and-input-apikey-and-secretkey" title="このヘッドラインへのパーマリンク"></a></h2>
 <a class="reference internal image-reference" href="../../_images/add_key.png"><img alt="add_key" src="../../_images/add_key.png" style="width: 400px;" /></a>
 </section>
 <section id="click-node-url-and-input-apisify-trade-url-your-server-url-v1-order">
-<h2>7. apisify tradeのURL &quot;&lt;YOUR SERVER URL&gt;/v1/order&quot;を入力してください.<a class="headerlink" href="#click-node-url-and-input-apisify-trade-url-your-server-url-v1-order" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>5. apisify tradeのURL &quot;&lt;YOUR SERVER URL&gt;/v1/order&quot;を入力してください.<a class="headerlink" href="#click-node-url-and-input-apisify-trade-url-your-server-url-v1-order" title="このヘッドラインへのパーマリンク"></a></h2>
 <a class="reference internal image-reference" href="../../_images/add_URL.png"><img alt="add_URL" src="../../_images/add_URL.png" style="width: 400px;" /></a>
 </section>
 <section id="click-node-discord-and-input-discord-url">
-<h2>8. ディスコードURLを入力してください.<a class="headerlink" href="#click-node-discord-and-input-discord-url" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>6. ディスコードURLを入力してください.<a class="headerlink" href="#click-node-discord-and-input-discord-url" title="このヘッドラインへのパーマリンク"></a></h2>
 <a class="reference internal image-reference" href="../../_images/add_discord_URL.png"><img alt="add_discord_URL" src="../../_images/add_discord_URL.png" style="width: 400px;" /></a>
 </section>
 <section id="input-the-other-parameters">
-<h2>9. 他パラメータを入力してください.<a class="headerlink" href="#input-the-other-parameters" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>7. 他パラメータを入力してください.<a class="headerlink" href="#input-the-other-parameters" title="このヘッドラインへのパーマリンク"></a></h2>
 </section>
 <section id="set-cron-and-turn-active">
-<h2>10. クロンを設定し、Activeに変更してください.<a class="headerlink" href="#set-cron-and-turn-active" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>8. クロンを設定し、Activeに変更してください.<a class="headerlink" href="#set-cron-and-turn-active" title="このヘッドラインへのパーマリンク"></a></h2>
 </section>
 <section id="click-execute-workflow-for-test">
-<h2>11. テストのため、&quot;Execute Workflow&quot;をクリックしてください.<a class="headerlink" href="#click-execute-workflow-for-test" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>9. テストのため、&quot;Execute Workflow&quot;をクリックしてください.<a class="headerlink" href="#click-execute-workflow-for-test" title="このヘッドラインへのパーマリンク"></a></h2>
 </section>
 </section>
 
