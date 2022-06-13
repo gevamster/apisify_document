@@ -47,13 +47,14 @@
 <li class="toctree-l1"><a class="reference internal" href="apisify.html">🐂｜④apisifyアカウント作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apisify-licensekey.html">🗝｜⑤apisifyライセンスキーの作成</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">✂｜⑥レポジトリのクローン</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#access-to-github-page-of-apisify-and-download-files-by-code-download-zip-and-unzip-this-file">1. apisifyのgithubページにログインし、『&quot;Code&quot; -&gt; &quot;Download ZIP&quot;』からファイルをダウンロードしてください.その後、このファイルを解凍してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page">2. githubプロフィールページの『&quot;Repositories&quot;-&gt;&quot;New&quot;』から空のプライベートレポジトリを作成してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#from-the-repository-you-have-created-go-to-add-file-upload-files-and-upload-the-files-in-the-folder-you-have-just-unzipped-by-drag-and-drop">3. 作成したレポジトリから『&quot;Add file&quot;-&gt;&quot;Upload files&quot;』とアクセスし、先程解凍したフォルダ内のファイルをドラッグアンドドロップによりアップロードしてください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit">4. 作成したレポジトリにアクセスし、『&quot;Actions&quot;-&gt;&quot;set up workflow yourself&quot;-&gt;&quot;Start commit&quot;』でmain.yamlを作成してください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-auth-yaml-and-workflow-deploy-yaml-in-github-workflows-in-the-folder-you-have-just-unzipped">5. .github/workflowにmain.yamlがあることを確認し、『&quot;Add file&quot;-&gt;&quot;Upload files&quot;』から解凍したフォルダ内の.github/workflows直下にあるworkflow_auth.yaml及びworkflow_deploy.yamlをアップロードしてください.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#check-the-add-a-readme-file-checkbox">6. &quot;Add a README file&quot;にチェックをつける.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#click-commit-changes-after-uploading-files">7. ファイルをアップロード後&quot;Commit changes&quot;をクリックする.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page">1. githubプロフィールページの『&quot;Repositories&quot;-&gt;&quot;New&quot;』から空のプライベートレポジトリを作成してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-account-menu-go-to-settings-developer-settings-personal-access-tokens-generate-new-token">2. アカウントのメニューから『&quot;Settings&quot;-&gt;&quot;Developer Settings&quot;-&gt;&quot;Personal access tokens&quot;-&gt;&quot;Generate new token&quot;』</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-new-personal-access-token-and-copy-the-string">3. パーソナルアクセストークンを生成し、その文字列をコピーしてください</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-repository-you-have-created-go-to-settings-secrets-actions-new-repository-secret">作成したレポジトリから&quot;Settings&quot;-&gt;&quot;Secrets&quot;-&gt;&quot;Actions&quot;-&gt;&quot;New repository secret&quot;』</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit">5. 作成したレポジトリにアクセスし、『&quot;Actions&quot;-&gt;&quot;set up workflow yourself&quot;-&gt;&quot;Start commit&quot;』でmain.yamlを作成してください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-clone-yaml">6. .github/workflowにmain.yamlがあることを確認し、workflow_clone.yamlをアップロードしてください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-commit-changes-after-uploading-files">7. ファイルをアップロード後&quot;Commit changes&quot;をクリックしてください.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-repository-you-have-created-go-to-actions-clone-apisify-run-workflow-select-a-branch-run-workflow">8. 作成したレポジトリから『&quot;Actions&quot;-&gt;&quot;clone apisify&quot;-&gt;&quot;Run workflow&quot;-&gt;&quot;Select a branch&quot;-&gt;&quot;Run workflow&quot;』</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="integration.html">🔌｜⑦連携</a></li>
@@ -65,7 +66,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Sample:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../sample/apisify-flow.html">apisify flowによる積立買付</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sample/apisify-flow.html">🚀｜⑨apisify flowによる積立買付</a></li>
 </ul>
 
         </div>
@@ -94,50 +95,61 @@
              
   <section id="clone-repository">
 <h1>✂｜⑥レポジトリのクローン<a class="headerlink" href="#clone-repository" title="このヘッドラインへのパーマリンク"></a></h1>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p>無料プランで使用する場合は本手順は省略してください.</p>
-</div>
-<section id="access-to-github-page-of-apisify-and-download-files-by-code-download-zip-and-unzip-this-file">
-<h2>1. apisifyのgithubページにログインし、『&quot;Code&quot; -&gt; &quot;Download ZIP&quot;』からファイルをダウンロードしてください.その後、このファイルを解凍してください.<a class="headerlink" href="#access-to-github-page-of-apisify-and-download-files-by-code-download-zip-and-unzip-this-file" title="このヘッドラインへのパーマリンク"></a></h2>
-<div class="line-block">
-<div class="line"><a class="reference external" href="https://github.com/gevamster/apisify">https://github.com/gevamster/apisify</a></div>
-</div>
-<a class="reference internal image-reference" href="../../_images/download_apisify_files.png"><img alt="download_apisify_files" src="../../_images/download_apisify_files.png" style="width: 400px;" /></a>
-</section>
 <section id="create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page">
-<h2>2. githubプロフィールページの『&quot;Repositories&quot;-&gt;&quot;New&quot;』から空のプライベートレポジトリを作成してください.<a class="headerlink" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>1. githubプロフィールページの『&quot;Repositories&quot;-&gt;&quot;New&quot;』から空のプライベートレポジトリを作成してください.<a class="headerlink" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page" title="このヘッドラインへのパーマリンク"></a></h2>
 <div class="line-block">
 <div class="line">自由に記載してください</div>
 <div class="line">Public/Private: Private</div>
+<div class="line">Check &quot;Add a README.md file&quot; checkbox</div>
 <div class="line">-&gt; Create repository</div>
 </div>
-<a class="reference internal image-reference" href="../../_images/create_private_repository.png"><img alt="create_private_repository" src="../../_images/create_private_repository.png" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../../_images/github_check_private.png"><img alt="github_check_private" src="../../_images/github_check_private.png" style="width: 400px;" /></a>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
+<a class="reference internal image-reference" href="../../_images/1_create_private_repository.png"><img alt="1_create_private_repository" src="../../_images/1_create_private_repository.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/2_github_check_private.png"><img alt="2_github_check_private" src="../../_images/2_github_check_private.png" style="width: 400px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
 <p>privateバッチがついていることを必ず確認してください. ついてない場合、作成したレポジトリから『&quot;Setting&quot;-&gt;&quot;Change visibility&quot;』でprivateに変更してください.</p>
 </div>
 </section>
-<section id="from-the-repository-you-have-created-go-to-add-file-upload-files-and-upload-the-files-in-the-folder-you-have-just-unzipped-by-drag-and-drop">
-<h2>3. 作成したレポジトリから『&quot;Add file&quot;-&gt;&quot;Upload files&quot;』とアクセスし、先程解凍したフォルダ内のファイルをドラッグアンドドロップによりアップロードしてください.<a class="headerlink" href="#from-the-repository-you-have-created-go-to-add-file-upload-files-and-upload-the-files-in-the-folder-you-have-just-unzipped-by-drag-and-drop" title="このヘッドラインへのパーマリンク"></a></h2>
-<a class="reference internal image-reference" href="../../_images/drag_and_drop_files.png"><img alt="drag_and_drop_files" src="../../_images/drag_and_drop_files.png" style="width: 400px;" /></a>
+<section id="from-the-account-menu-go-to-settings-developer-settings-personal-access-tokens-generate-new-token">
+<h2>2. アカウントのメニューから『&quot;Settings&quot;-&gt;&quot;Developer Settings&quot;-&gt;&quot;Personal access tokens&quot;-&gt;&quot;Generate new token&quot;』<a class="headerlink" href="#from-the-account-menu-go-to-settings-developer-settings-personal-access-tokens-generate-new-token" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="../../_images/3_account_menu_settings.png"><img alt="3_account_menu_settings" src="../../_images/3_account_menu_settings.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4_personal_access_tokens.png"><img alt="4_personal_access_tokens" src="../../_images/4_personal_access_tokens.png" style="width: 400px;" /></a>
+</section>
+<section id="generate-new-personal-access-token-and-copy-the-string">
+<h2>3. パーソナルアクセストークンを生成し、その文字列をコピーしてください<a class="headerlink" href="#generate-new-personal-access-token-and-copy-the-string" title="このヘッドラインへのパーマリンク"></a></h2>
+<div class="line-block">
+<div class="line">Note: PAT</div>
+<div class="line">Check &quot;workflow&quot; checkbox</div>
+<div class="line">-&gt; Generate token</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/5_pat.png"><img alt="5_pat" src="../../_images/5_pat.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6_copy_string.png"><img alt="6_copy_string" src="../../_images/6_copy_string.png" style="width: 400px;" /></a>
+</section>
+<section id="from-the-repository-you-have-created-go-to-settings-secrets-actions-new-repository-secret">
+<h2>作成したレポジトリから&quot;Settings&quot;-&gt;&quot;Secrets&quot;-&gt;&quot;Actions&quot;-&gt;&quot;New repository secret&quot;』<a class="headerlink" href="#from-the-repository-you-have-created-go-to-settings-secrets-actions-new-repository-secret" title="このヘッドラインへのパーマリンク"></a></h2>
+<div class="line-block">
+<div class="line">Name: PAT</div>
+<div class="line">Paste the string of personal access token.</div>
+<div class="line">-&gt; Add secret</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/7_pat_setting.png"><img alt="7_pat_setting" src="../../_images/7_pat_setting.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_pat_register.png"><img alt="8_pat_register" src="../../_images/8_pat_register.png" style="width: 400px;" /></a>
 </section>
 <section id="access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit">
-<h2>4. 作成したレポジトリにアクセスし、『&quot;Actions&quot;-&gt;&quot;set up workflow yourself&quot;-&gt;&quot;Start commit&quot;』でmain.yamlを作成してください.<a class="headerlink" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit" title="このヘッドラインへのパーマリンク"></a></h2>
-<a class="reference internal image-reference" href="../../_images/set_up_a_workflow_yourself.png"><img alt="set_up_a_workflow_yourself" src="../../_images/set_up_a_workflow_yourself.png" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../../_images/create_mainyaml.png"><img alt="create_mainyaml" src="../../_images/create_mainyaml.png" style="width: 400px;" /></a>
+<h2>5. 作成したレポジトリにアクセスし、『&quot;Actions&quot;-&gt;&quot;set up workflow yourself&quot;-&gt;&quot;Start commit&quot;』でmain.yamlを作成してください.<a class="headerlink" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="../../_images/9_set_up_a_workflow_yourself.png"><img alt="9_set_up_a_workflow_yourself" src="../../_images/9_set_up_a_workflow_yourself.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/10_create_mainyaml.png"><img alt="10_create_mainyaml" src="../../_images/10_create_mainyaml.png" style="width: 400px;" /></a>
 </section>
-<section id="make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-auth-yaml-and-workflow-deploy-yaml-in-github-workflows-in-the-folder-you-have-just-unzipped">
-<h2>5. .github/workflowにmain.yamlがあることを確認し、『&quot;Add file&quot;-&gt;&quot;Upload files&quot;』から解凍したフォルダ内の.github/workflows直下にあるworkflow_auth.yaml及びworkflow_deploy.yamlをアップロードしてください.<a class="headerlink" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-auth-yaml-and-workflow-deploy-yaml-in-github-workflows-in-the-folder-you-have-just-unzipped" title="このヘッドラインへのパーマリンク"></a></h2>
-<a class="reference internal image-reference" href="../../_images/upload_yaml_files.png"><img alt="upload_yaml_files" src="../../_images/upload_yaml_files.png" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../../_images/upload_yaml_files2.png"><img alt="upload_yaml_files2" src="../../_images/upload_yaml_files2.png" style="width: 400px;" /></a>
-</section>
-<section id="check-the-add-a-readme-file-checkbox">
-<h2>6. &quot;Add a README file&quot;にチェックをつける.<a class="headerlink" href="#check-the-add-a-readme-file-checkbox" title="このヘッドラインへのパーマリンク"></a></h2>
+<section id="make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-clone-yaml">
+<h2>6. .github/workflowにmain.yamlがあることを確認し、workflow_clone.yamlをアップロードしてください.<a class="headerlink" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-clone-yaml" title="このヘッドラインへのパーマリンク"></a></h2>
+<a class="reference internal image-reference" href="../../_images/11_upload_yaml_files.png"><img alt="11_upload_yaml_files" src="../../_images/11_upload_yaml_files.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/12_upload_yaml_files2.png"><img alt="12_upload_yaml_files2" src="../../_images/12_upload_yaml_files2.png" style="width: 400px;" /></a>
 </section>
 <section id="click-commit-changes-after-uploading-files">
-<h2>7. ファイルをアップロード後&quot;Commit changes&quot;をクリックする.<a class="headerlink" href="#click-commit-changes-after-uploading-files" title="このヘッドラインへのパーマリンク"></a></h2>
+<h2>7. ファイルをアップロード後&quot;Commit changes&quot;をクリックしてください.<a class="headerlink" href="#click-commit-changes-after-uploading-files" title="このヘッドラインへのパーマリンク"></a></h2>
+</section>
+<section id="from-the-repository-you-have-created-go-to-actions-clone-apisify-run-workflow-select-a-branch-run-workflow">
+<h2>8. 作成したレポジトリから『&quot;Actions&quot;-&gt;&quot;clone apisify&quot;-&gt;&quot;Run workflow&quot;-&gt;&quot;Select a branch&quot;-&gt;&quot;Run workflow&quot;』<a class="headerlink" href="#from-the-repository-you-have-created-go-to-actions-clone-apisify-run-workflow-select-a-branch-run-workflow" title="このヘッドラインへのパーマリンク"></a></h2>
 </section>
 </section>
 

@@ -1,66 +1,92 @@
 ✂｜⑥Clone repository
 =======================
 
-.. note:: Omit this step if you are using the free plan.
-
-1. Access to github page of apisify and Download files by 『"Code" -> "Download.ZIP"』. And, unzip this file.
---------------------------------------------------------------------------------------------------------------
-
-| https://github.com/gevamster/apisify
-
-.. image:: images/clone_repository/download_apisify_files.png
-    :width: 400
-    :alt: download_apisify_files
-
-2. Create an empty private repository from 『"Repositories"->"New"』 on your github profile page.
+1. Create an empty private repository from 『"Repositories"->"New"』 on your github profile page.
 --------------------------------------------------------------------------------------------------
 
 | Repository name: describe freely
 | Public/Private: Private
+| Check "Add a README.md file" checkbox
 | -> Create repository
 
-.. image:: images/clone_repository/create_private_repository.png
+.. image:: images/clone_repository/1_create_private_repository.png
     :width: 400
-    :alt: create_private_repository
+    :alt: 1_create_private_repository
 
-.. image:: images/clone_repository/github_check_private.png
+.. image:: images/clone_repository/2_github_check_private.png
     :width: 400
-    :alt: github_check_private
+    :alt: 2_github_check_private
 
-.. note:: Be sure to check that the private batch is attached. If not, change the batch to private by clicking 『"Setting"->"Change visibility"』 in the repository you created.
+.. warning:: Be sure to check that the private batch is attached. If not, change the batch to private by clicking 『"Setting"->"Change visibility"』 in the repository you created.
 
 
-3. From the repository you have created, go to 『"Add file"->"Upload files"』 and upload the files in the folder you have just unzipped by drag and drop.
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+2. From the account menu, go to 『"Settings"->"Developer Settings"->"Personal access tokens"->"Generate new token"』.
+----------------------------------------------------------------------------------------------------------------------
 
-.. image:: images/clone_repository/drag_and_drop_files.png
+.. image:: images/clone_repository/3_account_menu_settings.png
     :width: 400
-    :alt: drag_and_drop_files
+    :alt: 3_account_menu_settings
 
-4. Access the repository you created and create main.yaml by selecting "Actions"->"set up workflow yourself"->"Start commit".
+.. image:: images/clone_repository/4_personal_access_tokens.png
+    :width: 400
+    :alt: 4_personal_access_tokens
+
+3. Generate new personal access token and copy the string.
+-----------------------------------------------------------
+
+| Note: PAT
+| Check "workflow" checkbox
+| -> Generate token
+
+.. image:: images/clone_repository/5_pat.png
+    :width: 400
+    :alt: 5_pat
+
+.. image:: images/clone_repository/6_copy_string.png
+    :width: 400
+    :alt: 6_copy_string
+
+4. From the repository you have created, go to 『"Settings"->"Secrets"->"Actions"->"New repository secret"』.
+--------------------------------------------------------------------------------------------------------------
+
+| Name: PAT
+| Paste the string of personal access token.
+| -> Add secret
+
+.. image:: images/clone_repository/7_pat_setting.png
+    :width: 400
+    :alt: 7_pat_setting
+
+.. image:: images/clone_repository/8_pat_register.png
+    :width: 400
+    :alt: 8_pat_register
+
+5. Access the repository you created and create main.yaml by selecting "Actions"->"set up workflow yourself"->"Start commit".
 ------------------------------------------------------------------------------------------------------------------------------
 
-.. image:: images/clone_repository/set_up_a_workflow_yourself.png
+.. image:: images/clone_repository/9_set_up_a_workflow_yourself.png
     :width: 400
-    :alt: set_up_a_workflow_yourself
+    :alt: 9_set_up_a_workflow_yourself
 
-.. image:: images/clone_repository/create_mainyaml.png
+.. image:: images/clone_repository/10_create_mainyaml.png
     :width: 400
-    :alt: create_mainyaml
+    :alt: 10_create_mainyaml
 
-5. Make sure you have main.yaml in .github/workflow, and then go to 『"Add file"->"Upload files"』 and upload "workflow_auth.yaml" and "workflow_deploy.yaml" in .github/workflows in the folder you have just unzipped.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. Make sure you have main.yaml in .github/workflow, and then go to 『"Add file"->"Upload files"』 and upload "workflow_clone.yaml".
+-------------------------------------------------------------------------------------------------------------------------------------
 
-.. image:: images/clone_repository/upload_yaml_files.png
+.. image:: images/clone_repository/11_upload_yaml_files.png
     :width: 400
-    :alt: upload_yaml_files
+    :alt: 11_upload_yaml_files
 
-.. image:: images/clone_repository/upload_yaml_files2.png
+.. image:: images/clone_repository/12_upload_yaml_files2.png
     :width: 400
-    :alt: upload_yaml_files2
+    :alt: 12_upload_yaml_files2
 
-6. Check the "Add a README file" checkbox.
--------------------------------------------------
 
 7. Click "Commit changes" after uploading files.
 -------------------------------------------------
+
+
+8. From the repository you have created, go to 『"Actions"->"clone apisify"->"Run workflow"->"Select a branch"->"Run workflow"』.
+----------------------------------------------------------------------------------------------------------------------------------

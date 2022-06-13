@@ -46,13 +46,14 @@
 <li class="toctree-l1"><a class="reference internal" href="apisify.html">🐂｜④Create an apisify account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apisify-licensekey.html">🗝｜⑤Create license key of apisify</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">✂｜⑥Clone repository</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#access-to-github-page-of-apisify-and-download-files-by-code-download-zip-and-unzip-this-file">1. Access to github page of apisify and Download files by 『”Code” -&gt; “Download.ZIP”』. And, unzip this file.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page">2. Create an empty private repository from 『”Repositories”-&gt;”New”』 on your github profile page.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#from-the-repository-you-have-created-go-to-add-file-upload-files-and-upload-the-files-in-the-folder-you-have-just-unzipped-by-drag-and-drop">3. From the repository you have created, go to 『”Add file”-&gt;”Upload files”』 and upload the files in the folder you have just unzipped by drag and drop.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit">4. Access the repository you created and create main.yaml by selecting “Actions”-&gt;”set up workflow yourself”-&gt;”Start commit”.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-auth-yaml-and-workflow-deploy-yaml-in-github-workflows-in-the-folder-you-have-just-unzipped">5. Make sure you have main.yaml in .github/workflow, and then go to 『”Add file”-&gt;”Upload files”』 and upload “workflow_auth.yaml” and “workflow_deploy.yaml” in .github/workflows in the folder you have just unzipped.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#check-the-add-a-readme-file-checkbox">6. Check the “Add a README file” checkbox.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page">1. Create an empty private repository from 『”Repositories”-&gt;”New”』 on your github profile page.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-account-menu-go-to-settings-developer-settings-personal-access-tokens-generate-new-token">2. From the account menu, go to 『”Settings”-&gt;”Developer Settings”-&gt;”Personal access tokens”-&gt;”Generate new token”』.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-new-personal-access-token-and-copy-the-string">3. Generate new personal access token and copy the string.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-repository-you-have-created-go-to-settings-secrets-actions-new-repository-secret">4. From the repository you have created, go to 『”Settings”-&gt;”Secrets”-&gt;”Actions”-&gt;”New repository secret”』.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit">5. Access the repository you created and create main.yaml by selecting “Actions”-&gt;”set up workflow yourself”-&gt;”Start commit”.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-clone-yaml">6. Make sure you have main.yaml in .github/workflow, and then go to 『”Add file”-&gt;”Upload files”』 and upload “workflow_clone.yaml”.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#click-commit-changes-after-uploading-files">7. Click “Commit changes” after uploading files.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-repository-you-have-created-go-to-actions-clone-apisify-run-workflow-select-a-branch-run-workflow">8. From the repository you have created, go to 『”Actions”-&gt;”clone apisify”-&gt;”Run workflow”-&gt;”Select a branch”-&gt;”Run workflow”』.</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="integration.html">🔌｜⑦Integration</a></li>
@@ -93,50 +94,61 @@
              
   <section id="clone-repository">
 <h1>✂｜⑥Clone repository<a class="headerlink" href="#clone-repository" title="Permalink to this headline"></a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Omit this step if you are using the free plan.</p>
-</div>
-<section id="access-to-github-page-of-apisify-and-download-files-by-code-download-zip-and-unzip-this-file">
-<h2>1. Access to github page of apisify and Download files by 『”Code” -&gt; “Download.ZIP”』. And, unzip this file.<a class="headerlink" href="#access-to-github-page-of-apisify-and-download-files-by-code-download-zip-and-unzip-this-file" title="Permalink to this headline"></a></h2>
-<div class="line-block">
-<div class="line"><a class="reference external" href="https://github.com/gevamster/apisify">https://github.com/gevamster/apisify</a></div>
-</div>
-<a class="reference internal image-reference" href="../../_images/download_apisify_files.png"><img alt="download_apisify_files" src="../../_images/download_apisify_files.png" style="width: 400px;" /></a>
-</section>
 <section id="create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page">
-<h2>2. Create an empty private repository from 『”Repositories”-&gt;”New”』 on your github profile page.<a class="headerlink" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page" title="Permalink to this headline"></a></h2>
+<h2>1. Create an empty private repository from 『”Repositories”-&gt;”New”』 on your github profile page.<a class="headerlink" href="#create-an-empty-private-repository-from-repositories-new-on-your-github-profile-page" title="Permalink to this headline"></a></h2>
 <div class="line-block">
 <div class="line">Repository name: describe freely</div>
 <div class="line">Public/Private: Private</div>
+<div class="line">Check “Add a README.md file” checkbox</div>
 <div class="line">-&gt; Create repository</div>
 </div>
-<a class="reference internal image-reference" href="../../_images/create_private_repository.png"><img alt="create_private_repository" src="../../_images/create_private_repository.png" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../../_images/github_check_private.png"><img alt="github_check_private" src="../../_images/github_check_private.png" style="width: 400px;" /></a>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<a class="reference internal image-reference" href="../../_images/1_create_private_repository.png"><img alt="1_create_private_repository" src="../../_images/1_create_private_repository.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/2_github_check_private.png"><img alt="2_github_check_private" src="../../_images/2_github_check_private.png" style="width: 400px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>Be sure to check that the private batch is attached. If not, change the batch to private by clicking 『”Setting”-&gt;”Change visibility”』 in the repository you created.</p>
 </div>
 </section>
-<section id="from-the-repository-you-have-created-go-to-add-file-upload-files-and-upload-the-files-in-the-folder-you-have-just-unzipped-by-drag-and-drop">
-<h2>3. From the repository you have created, go to 『”Add file”-&gt;”Upload files”』 and upload the files in the folder you have just unzipped by drag and drop.<a class="headerlink" href="#from-the-repository-you-have-created-go-to-add-file-upload-files-and-upload-the-files-in-the-folder-you-have-just-unzipped-by-drag-and-drop" title="Permalink to this headline"></a></h2>
-<a class="reference internal image-reference" href="../../_images/drag_and_drop_files.png"><img alt="drag_and_drop_files" src="../../_images/drag_and_drop_files.png" style="width: 400px;" /></a>
+<section id="from-the-account-menu-go-to-settings-developer-settings-personal-access-tokens-generate-new-token">
+<h2>2. From the account menu, go to 『”Settings”-&gt;”Developer Settings”-&gt;”Personal access tokens”-&gt;”Generate new token”』.<a class="headerlink" href="#from-the-account-menu-go-to-settings-developer-settings-personal-access-tokens-generate-new-token" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/3_account_menu_settings.png"><img alt="3_account_menu_settings" src="../../_images/3_account_menu_settings.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4_personal_access_tokens.png"><img alt="4_personal_access_tokens" src="../../_images/4_personal_access_tokens.png" style="width: 400px;" /></a>
+</section>
+<section id="generate-new-personal-access-token-and-copy-the-string">
+<h2>3. Generate new personal access token and copy the string.<a class="headerlink" href="#generate-new-personal-access-token-and-copy-the-string" title="Permalink to this headline"></a></h2>
+<div class="line-block">
+<div class="line">Note: PAT</div>
+<div class="line">Check “workflow” checkbox</div>
+<div class="line">-&gt; Generate token</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/5_pat.png"><img alt="5_pat" src="../../_images/5_pat.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6_copy_string.png"><img alt="6_copy_string" src="../../_images/6_copy_string.png" style="width: 400px;" /></a>
+</section>
+<section id="from-the-repository-you-have-created-go-to-settings-secrets-actions-new-repository-secret">
+<h2>4. From the repository you have created, go to 『”Settings”-&gt;”Secrets”-&gt;”Actions”-&gt;”New repository secret”』.<a class="headerlink" href="#from-the-repository-you-have-created-go-to-settings-secrets-actions-new-repository-secret" title="Permalink to this headline"></a></h2>
+<div class="line-block">
+<div class="line">Name: PAT</div>
+<div class="line">Paste the string of personal access token.</div>
+<div class="line">-&gt; Add secret</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/7_pat_setting.png"><img alt="7_pat_setting" src="../../_images/7_pat_setting.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_pat_register.png"><img alt="8_pat_register" src="../../_images/8_pat_register.png" style="width: 400px;" /></a>
 </section>
 <section id="access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit">
-<h2>4. Access the repository you created and create main.yaml by selecting “Actions”-&gt;”set up workflow yourself”-&gt;”Start commit”.<a class="headerlink" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit" title="Permalink to this headline"></a></h2>
-<a class="reference internal image-reference" href="../../_images/set_up_a_workflow_yourself.png"><img alt="set_up_a_workflow_yourself" src="../../_images/set_up_a_workflow_yourself.png" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../../_images/create_mainyaml.png"><img alt="create_mainyaml" src="../../_images/create_mainyaml.png" style="width: 400px;" /></a>
+<h2>5. Access the repository you created and create main.yaml by selecting “Actions”-&gt;”set up workflow yourself”-&gt;”Start commit”.<a class="headerlink" href="#access-the-repository-you-created-and-create-main-yaml-by-selecting-actions-set-up-workflow-yourself-start-commit" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/9_set_up_a_workflow_yourself.png"><img alt="9_set_up_a_workflow_yourself" src="../../_images/9_set_up_a_workflow_yourself.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/10_create_mainyaml.png"><img alt="10_create_mainyaml" src="../../_images/10_create_mainyaml.png" style="width: 400px;" /></a>
 </section>
-<section id="make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-auth-yaml-and-workflow-deploy-yaml-in-github-workflows-in-the-folder-you-have-just-unzipped">
-<h2>5. Make sure you have main.yaml in .github/workflow, and then go to 『”Add file”-&gt;”Upload files”』 and upload “workflow_auth.yaml” and “workflow_deploy.yaml” in .github/workflows in the folder you have just unzipped.<a class="headerlink" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-auth-yaml-and-workflow-deploy-yaml-in-github-workflows-in-the-folder-you-have-just-unzipped" title="Permalink to this headline"></a></h2>
-<a class="reference internal image-reference" href="../../_images/upload_yaml_files.png"><img alt="upload_yaml_files" src="../../_images/upload_yaml_files.png" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../../_images/upload_yaml_files2.png"><img alt="upload_yaml_files2" src="../../_images/upload_yaml_files2.png" style="width: 400px;" /></a>
-</section>
-<section id="check-the-add-a-readme-file-checkbox">
-<h2>6. Check the “Add a README file” checkbox.<a class="headerlink" href="#check-the-add-a-readme-file-checkbox" title="Permalink to this headline"></a></h2>
+<section id="make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-clone-yaml">
+<h2>6. Make sure you have main.yaml in .github/workflow, and then go to 『”Add file”-&gt;”Upload files”』 and upload “workflow_clone.yaml”.<a class="headerlink" href="#make-sure-you-have-main-yaml-in-github-workflow-and-then-go-to-add-file-upload-files-and-upload-workflow-clone-yaml" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/11_upload_yaml_files.png"><img alt="11_upload_yaml_files" src="../../_images/11_upload_yaml_files.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/12_upload_yaml_files2.png"><img alt="12_upload_yaml_files2" src="../../_images/12_upload_yaml_files2.png" style="width: 400px;" /></a>
 </section>
 <section id="click-commit-changes-after-uploading-files">
 <h2>7. Click “Commit changes” after uploading files.<a class="headerlink" href="#click-commit-changes-after-uploading-files" title="Permalink to this headline"></a></h2>
+</section>
+<section id="from-the-repository-you-have-created-go-to-actions-clone-apisify-run-workflow-select-a-branch-run-workflow">
+<h2>8. From the repository you have created, go to 『”Actions”-&gt;”clone apisify”-&gt;”Run workflow”-&gt;”Select a branch”-&gt;”Run workflow”』.<a class="headerlink" href="#from-the-repository-you-have-created-go-to-actions-clone-apisify-run-workflow-select-a-branch-run-workflow" title="Permalink to this headline"></a></h2>
 </section>
 </section>
 
